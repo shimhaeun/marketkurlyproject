@@ -1,0 +1,52 @@
+.loginlogo {
+    width: 190px;
+    height: 90px;
+    background: url(images/loginlogo.jpg);
+    text-indent: -9999px;
+    margin: auto;
+    position: relative;
+}
+.loginbox {
+    text-align: center;
+
+    height: 600px;
+}
+fieldset {
+    border: none;
+    margin: 100px;
+}
+.id {
+    margin: 20px;
+}
+.pwd {
+    margin: 20px;
+
+}
+.find_idpw {
+    font-size: 11px;
+    box-sizing: content-box;
+    text-align:left;
+    
+}
+form input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+#joinbtn { 
+    background-color: black;
+}
+#loginbtn, #joinbtn {
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+form input[type="submit"] {
+    width: 300px;
+    background-color: #1f9a50;
+    border: none;
+}
+form input[type="button"] {
+    width: 300px;
+    border: 1px solid #1f9a50;
+}
