@@ -1,5 +1,11 @@
+*{	
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
 #body-wrapper {
-    min-height: 100%;
+    width: 100% auto;
+    height: 100%;
     position: relative;
 }
 #body-content {
@@ -131,18 +137,22 @@
 }
 /* main image */
 .main_image {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     height: 345px;
-    margin: 0px auto 60px;
-    /* position: relative; */
+    margin: auto;
+    position: relative;
 }
 .main_image1 {
-    width: 800px;height: 345px;
+    max-width: 1000px;
+    width: 100%;
+    height: 345px;
     background: url(images/main_image.png) no-repeat;
     text-indent: -9999px;
-    /* display: block;
-    margin: 20px 20px 20px;
-    box-sizing: border-box; */
+    display: block;
+    margin: auto;
+    /* margin: 20px 20px 20px; */
+    box-sizing: border-box;
     position: relative;
 }
 /* 상품 리스트 */
@@ -152,9 +162,8 @@
 	-background-color:beige;
 }
 .title-goods{
-	width:100%;
-	height:150px;
-	line-height:146px;
+	width: 1200px;
+	height: 65px;
 	text-align:center;
 	background:url("images/recommend_goods.gif") no-repeat; 
     /* 62% 50%; */
@@ -172,7 +181,7 @@
 .box{
 	width:255px;
 	height:400px;
-	-background-color:#aaa;
+	/* -background-color:#aaa; */
 	float:left;
 	-border:1px solid #000;
 	margin-right:10px;
@@ -202,7 +211,65 @@
 del{
 	color:#aaa;
 	font-size:15px;
-}/* content */
+}
+/* 이벤트 소식 */
+.main-event{
+	width:100%;
+	height:684px;
+	background-color:#eee;
+}
+.main-event-inner{
+	width:1050px;
+	height:538px;
+	margin:auto;
+	-background-color:seagreen;
+}
+.event-box{
+	width:338px;
+	height:338px;
+	float:left;
+	-border:1px solid black;
+	margin-right:18px;
+	text-align:center;
+}
+.event-box:last-child{
+	margin-right:0;
+}
+.event-box img{
+	width:255px;
+	height:320px;
+    position: relative;
+}
+.evt-txt-g{
+	color:rgb(0, 0, 0);
+    width: 255px;
+    height: 80px;
+    font-size:15px;
+    position: relative;
+    text-align: center;
+}
+.evt-txt{
+    width: 255px;
+    height: 80px;
+	line-height:1.6;
+	margin-top:15px;
+	font-size:15px;
+}
+b{
+	font-size:18px;
+}
+/* content */
+
+.bnr{
+	width:803px;
+	height:150px;
+    background: url(images/banner.gif) no-repeat;
+	margin:auto;
+	/* -background-color:red; */
+	text-align:center;
+    text-indent: -9999px;
+
+}
 .content {
     width: 800px;
     height: 150px;
@@ -223,6 +290,25 @@ del{
     width:1200px; height: 50px;
     background: url(images/kurlyonly_rcmd.gif) no-repeat;
 
+}
+.category_rank {
+    width: 380px;
+    height: 50px;
+    text-indent: -9999px;
+    position: relative;
+    margin: auto;
+    background: url(images/category_rank.gif);
+}
+.category{
+	width:1050px;
+	height:200px;
+	margin:auto;
+	-background-color:green;
+}
+.tabs{
+	position:relative;
+	z-index:10;
+	text-align:center;
 }
 /* footer */
 .footer {
