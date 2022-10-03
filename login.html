@@ -8,34 +8,41 @@
     <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
-    <div class="loginbox">
-        <form>
-            <fieldset>
-                <div class="loginlogo">
-                    로그인
-                </div>
-                <div class="id">
-                    <label><input type="text" id="user_id" size="40" placeholder="아이디를 입력해주세요." style="border: solid green;"> </label><br>
-                </div>
-                <div class="pwd">
-                    <label><input type="password" id="user_pwd" size="40" placeholder="비밀번호를 입력해주세요." style="border: solid green;"> </label>
-                </div>
-                <br>
-                <div class="find_idpw">
-                    <p class="find_id">아이디 찾기</p>
-                    <p class="find_pwd">비밀번호 찾기</p>
-                </div>
-                <div class="login_join_btn">
-                <div class="loginbtn">
-                    <input id="loginbtn" type="submit" value="로그인">
-                </div>
-                <br>
-                <div class="joinbtn">
-                    <input id="joinbtn" type="button" value="회원가입">
-                </div>
+<!-- 로그인 -->
+<div id="content">
+    <div class="section_login">
+      <h3 class="tit_login">로그인</h3>
+      <div class="login_box">
+        <div class="login_view">
+          <form method="POST" name="form" id="login_form">
+            <input type="text" name="id" size="20" tabindex="1" placeholder="아이디를 입력해주세요">
+            <input type="password" name="password" size="20" tabindex="2" placeholder="비밀번호를 입력해주세요">
+            <div class="checkbox_save">
+              <label class="label_checkbox checked" >
+
+                <input type="checkbox" id="chk_security"name="chk_security" value="y" checked="checked" onchange="">보안접속
+              </label>
+              <div class="login_search">
+                <a class="link" onclick="" href="#">아이디 찾기</a>
+                <span class="bar"></span>
+                <a class="link" onclick="" href="#">
+                  비밀번호 찾기
+                </a>
+              </div>
             </div>
-            </fieldset>
-        </form>
+            <button class="btn_type1" type="submit" onclick="">
+              <span class="txt_type">로그인</span>
+            </button>
+          </form>
+
+          <a class="btn_type2 btn_member" onclick="" href="#">
+            <span class="txt_type">회원가입</span>
+            </a>
+        </div>
+      </div>
     </div>
+  </div>
+  
+</main>
 </body>
 </html>

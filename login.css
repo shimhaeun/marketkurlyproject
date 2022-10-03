@@ -1,61 +1,165 @@
-.loginlogo {
-    width: 190px;
-    height: 90px;
-    background: url(images/loginlogo.jpg);
+/* 로그인  */
+
+h3 {
+    height: 100px;
+    margin: auto;
+    position: relative;
+}
+.tit_login {
+    margin: auto;
+    position: relative;
+}
+#content{
+    border-bottom: 1px solid var(--semi-white);
+    min-width: 1050px;
+    padding-bottom: 60px;
+}
+
+.section_login * {
+    font-family: noto sans;
+    color: var(--grey-dark-color);
+}
+
+#content .section_login{
+    width: 340px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 90px;
+    letter-spacing: -.6px;
+}
+
+.section_login .tit_login {
+    background: url(img/loginlogo.jpg) no-repeat center;
     text-indent: -9999px;
-    margin: auto;
-    position: relative;
-}
-.loginbox {
+    font-weight: 800;
+    line-height: 20px;
     text-align: center;
-
-    height: 600px;
-}
-fieldset {
-    border: none;
-    margin: 100px;
+    margin: 0 auto;
     position: relative;
-}
-.id {
-    margin: 20px;
-}
-.pwd {
-    margin: 20px;
+  }
+  
+  .section_login .login_box {
+    padding-top: 36px;
+    text-align: center;
+  }
+  
+  .section_login .login_view {
+    text-align: center;
+  }
+  /* 입력 폼 */
+  .section_login input[type=text], .section_login input[type=password] {
+    width: 100%;
+    height: 54px;
+    padding: 0 19px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color:var(--white-color);
+    font-size: var(--font-small);
+    line-height: 20px;
+    outline: none;
+    margin-top: 10px;
+  }
+  .section_login .label_checkbox {
+    position: relative;
+    padding: 3px 0 3px 22px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  
+  .section_login .checkbox_save {
+    overflow: hidden;
+    padding-bottom: 28px;
+  }
+  
+  .section_login .checkbox_save .label_checkbox {
+    float: left;
+    margin-top: 9px;
+  }
+  .section_login .label_checkbox.checked:before {
+    background: url(https://res.kurly.com/pc/service/order/1908/ico_checkbox_on.png) no-repeat 50% 50%;
+  }
+  
+  .section_login .label_checkbox:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 16px;
+    height: 17px;
+    /* background: url(https://res.kurly.com/pc/service/order/1908/ico_checkbox_off.png) no-repeat 50% 50%; */
+  }
+  
+  .section_login .label_checkbox [type=checkbox] {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    opacity: 0;
+  }
+  
+  
+  
+  .section_login .login_search {
+    float: right;
+    padding-top: 13px;
+  }
+  
+  .section_login .login_search .link {
+    float: left;
+    font-size: 13px;
+  }
+  
+  .section_login .login_search .bar {
+    float: left;
+    width: 1px;
+    height: 10px;
+    margin: 3px 6px 0;
+    background-color:var(--grey-dark-color);
+  }
+  
+  .btn_type1 {
+    border: 1px solid var(--purple-color);
+    background-color: green;
 
-}
-.find_idpw {
-    width: 100px;
-    height: 70px;
-    font-size: 11px;
-    box-sizing:border-box;
-    /* text-align:left; */
-    /* float: left;  */
-}
-form input{
-    padding: 10px;
+  }
+  .btn_type1, .btn_type2 {
+    display: block;
+    overflow: hidden;
+    /* width: 100% */
+    width:380px;
+    height: 54px;
     border-radius: 5px;
-    border: none;
-}
-.login_join_btn {
-    width: 100px;
-    height: 70px;
-    margin: auto;
+    font-size: 0;
+    text-align: center;
+    border:1px solid green;
 
-}
-#joinbtn { 
-    background-color: black;
-}
-#loginbtn, #joinbtn {
-    border-radius: 5px;
-    border: none;
-    color: white;
-}
-form input[type="submit"] {
-    width: 300px;
-    background-color: #1f9a50;
-    border: none;
-}
-form input[type="button"] {
-    width: 300px;
-    border: 1px solid #1f9a50;
-}
+
+  }
+  
+  .btn_type1 .txt_type, .btn_type2 .txt_type {
+    display: inline-block;
+    height: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white-color);
+    line-height: 54px;
+    text-align: center;
+  }
+  
+  .btn_type1 .txt_type {
+    /* color: var(--white-color); */
+    color:white;
+
+  }
+  
+  .section_login .btn_member {
+      margin-top: 10px;
+    }
+    .btn_type2 {
+        /* border: 1px solid var(--purple-color); */
+        border:1px solid green;
+        /* background-color:var(--white-color); */
+        border-radius: 5px;
+  }
+  .btn_type2 .txt_type {
+    color: var(--purple-color);
+  }
