@@ -1,35 +1,93 @@
+body {
+    width: 1200px;
+    height: 800px;
+    
+}
 header {
     width: 170px;
     height: 90px;
     background: url(img/joinlogo.png);
     text-indent: -9999px;
     margin:auto;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    width: 1050px;
+    height: 800px;
+    border: none;
+    display:block;
+    align-items: center;
+    margin: 0 auto;
+    /* padding: 20px 450px; */
+    /* position: relative */
 }
 .content {
-    position: absolute;
-    margin: 100px auto 100px;
+    width: 1050px;
+    height: 500px;
+    position:relative;
+    /* margin: 100px auto 100px; */
+    margin: auto;
 
 }
 label {
-    margin: 50px 200px 200px auto;
+    /* margin: 50px 200px 200px auto; */
+    margin: auto;
     width: 300px;
     height: 50px;
-    justify-content: left;
+    
+    justify-content: center;
     
 }
-.user_id {
+input[type="text"] {
+    width: 200px;
+    height: 45px;
+    border: 2px solid green;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
-fieldset {
-    border: none;
+input:not([type="radio"]):not([type="checkbox"]) {
+width: 200px;
+height: 45px;
+border: 2px solid green;
+border-radius: 10px;
+margin: 0 ;
+
+}
+.user_id {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
 form {
     margin: auto;
+    width: 1050px;
+    height: 1000px;
 }
 .btn-sign {
     width: 200px;
     height: 50px;
     border-radius: 3px;
-    margin: auto;
-
+    margin: 0 auto;
 }
-
+.agree {
+    top:500px;
+    width: 1050px;
+    height: 550px;
+    padding: 50px 100px;
+    text-align: left;
+    
+}
+.btn-sign {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: green;
+    color: white;
+    border: none green;
+    border-radius: 10px;
+}

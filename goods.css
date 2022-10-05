@@ -149,8 +149,9 @@
   }
   #sectionView .goods_info .list {
     overflow: hidden;
-    padding: 18px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #f4f4f4;
+    position: relative;
   }
   
   #sectionView .goods_info .tit {
@@ -306,15 +307,6 @@
     background-image: url(https://res.kurly.com/pc/ico/2010/ico_plus_on.svg);
   }
   #cartPut .cart_option .list .up {
-    float: right;
-    margin-left: -1px;
-    background: #fff url(https://res.kurly.com/pc/ico/2010/ico_plus.svg) no-repeat 50% 50%;
-    background-size: 30px 30px;
-  }
-  #cartPut .cart_option .list .btn {
-    overflow: hidden;
-    float: left;
-    width: 28px;
     height: 28px;
     border: 0;
     font-size: 0;
