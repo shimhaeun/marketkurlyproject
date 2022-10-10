@@ -6,7 +6,7 @@ body {
 header {
     width: 170px;
     height: 90px;
-    background: url(img/joinlogo.png);
+    background: url(img/joinlogo.png) no-repeat;
     text-indent: -9999px;
     margin:auto;
     display: flex;
@@ -81,13 +81,42 @@ form {
     text-align: left;
     
 }
+.button_group {
+    width: 420px;
+    height: 100px;
+    left: 500px;
+    margin: 0 auto;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+/* align-items: centers; */
+/* .btn-sign .btn-return */
 .btn-sign {
     text-align: center;
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     background-color: green;
     color: white;
     border: none green;
     border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    float: left;
+    justify-content: center;
+}
+.btn-return {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* margin-top: 50px; */
+    background-color: green;
+    color: white;
+    border: none green;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
 }

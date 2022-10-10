@@ -30,8 +30,9 @@
                 u_id.focus();
                 return false;
             };
-            if(u_name.value =="") {
+            if(u_name.value == "") {
                 var txt = document.getElementById("err_name");
+                alert("ddd");
                 txt.textContent = "이름을 입력하세요.";
                 u_name.focus();
                 return false;
@@ -54,7 +55,7 @@
             var pwd_len = pwd.value.length;
             if(pwd_len < 4 || pwd_len > 8){
                 var txt = document.getElementById("err_pwd");
-                txt.textContent = "비밀번호는 4~12글자만 입력할 수 있습니다.";
+                txt.textContent = "비밀번호는 4~8글자만 입력할 수 있습니다.";
                 pwd.focus();
                 return false;
             };
@@ -70,14 +71,14 @@
                 apply1.focus();
                 return false;
             };
-            if(!apply1.checked){
+            if(!apply2.checked){
                 var txt = document.getElementById("err_apply2");
                 txt.textContent = "약관 동의가 필요합니다";
                 apply1.focus();
                 return false;
             };
-            if(!apply1.checked){
-                var txt = document.getElementById("err_apply2");
+            if(!apply3.checked){
+                var txt = document.getElementById("err_apply3");
                 txt.textContent = "약관 동의가 필요합니다";
                 apply1.focus();
                 return false;
@@ -91,6 +92,25 @@
             mobile.focus();
             return false;
         };
+        if(!apply1.checked){
+            var txt = document.getElementById("err_apply1");
+            txt.textContent = "이용약관 동의가 필요합니다."
+            apply1.focus();
+            return false;
+        };
+        if(!apply2.checked){
+            var txt = document.getElementById("err_apply2");
+            txt.textContent = "개인정보 수집 이용 동의가 필요합니다."
+            apply2.focus();
+            return false;
+        };
+        if(!apply3.checked){
+            var txt = document.getElementById("err_apply3");
+            txt.textContent = "무료배송, 할인쿠폰 등 혜택/정보 수신 동의가 필요합니다."
+            apply3.focus();
+            return false;
+        };
+    };
 
     function change_email(){
         var email_dns = document.getElementById("email_dns");
@@ -101,7 +121,6 @@
         var val = email_seloptions[idx].value;
         email_dns.value = val;
     };
-};
 
     function id_search(){
         window.open("id_search.html","","width=600, height=300, left=0, top=0");
@@ -112,8 +131,8 @@
 <body>
     <header id="header" class="header">
         <h1>회원가입</h1>
-        </header>
-        <hr>
+    </header>
+    <hr>
         <form id="join_form" name="join_form" action="joincomplete.html" method="get" onsubmit="return form_check()">
                 <fieldset class="info">
                 <p>
@@ -195,10 +214,10 @@
                         <p>동의 시 한달 간 [5% 적립] + [2만원 이상 무료배송] 첫 주문 후 안내</p>
                         <input type="checkbox" name="apply4" class="err_txt" id="apply4">본인은 만 14세 이상입니다.(필수)<br>
                     </div>
-                        <p>
-                            <button class="btn-sign"type="submit">가입하기</button>
-                            <button type="button">돌아가기</button>
-                        </p>
+                        <div class="button_group">
+                            <button class="btn-sign" type="submit" onclick="form_check()">가입하기</button>
+                            <button class="btn-return" type="button" onclick="history.back()">돌아가기</button>
+                        </div>
                 </fieldset>
             </form>
 </body>
