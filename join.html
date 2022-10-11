@@ -125,6 +125,9 @@
     function id_search(){
         window.open("id_search.html","","width=600, height=300, left=0, top=0");
     };
+    function addr_search(){
+        window.open("addr_search.html","","width:600, height=300, left=0, top=0");
+    }
 
     </script>
 </head>
@@ -176,7 +179,7 @@
                 <p>
                     <label for="user_address">주소</label>
                     <input type="text" name="postalCode" id="postalCode">
-                    <button type="button">주소 검색</button><br>
+                    <button type="button" onclick="addr_search()">주소 검색</button><br>
                     <label for="addr1">기본주소</label>
                     <input type="text" id="addr1" placeholder="주소를 입력해주세요." size="30"><br>
                     <label for="addr2">상세주소</label>
