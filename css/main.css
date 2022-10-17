@@ -402,6 +402,7 @@ header{
 	text-align:center;
 	background-size:35px;
 	background:linear-gradient(white, rgb(242, 247, 191));
+	margin-bottom: 10px;
 }
 
 .product-list-inner{
@@ -577,8 +578,8 @@ b{
 /* 배너 */
 .banner{
 	width:100%;
-	/* height:141.33px; */
-	height: 100px;
+	height:141.33px;
+	/* height: 100px; */
 	top: 500px;
 	-border:1px solid red;
 	margin-top:-30px;
@@ -655,10 +656,16 @@ ul.tabs li:hover{
 .box2{
 	width:1050px;
 	height:462px;
+	display:inline-flex;
+	align-items: center;
+	margin: auto;
 	-background-color:#aaa;
 	-border:1px solid #000;
 	position:absolute;
 	-border:5px solid gold;
+	flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
 }
 .box2 div{
 	width:255px;
@@ -689,7 +696,7 @@ ul.tabs li:hover{
 	border:1px solid #ccc;
 	text-align:center;
 	margin:auto;
-	margin-top:50px;
+	margin-top:100px;
 	display:block;
 	margin-bottom:80px;
 }

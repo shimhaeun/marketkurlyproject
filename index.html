@@ -13,7 +13,26 @@
 <script>
 	$(document).ready(function(){
 	  $('.slide').bxSlider();
+	
+	//   $('.product-list-inner').bxSlider();
+	//   $('#content-1').bxSlider();
+
+		// $('.product-list-inner').each(function() {
+		var sliderPrev = $(this).find("#content-1");
+		var sliderNext = $(this).find("#content-2");
+
+		$(this).find(".category-content").bxSlider({
+			auto: false,
+			minSlides: 4,
+			maxSlides: 4,
+			moveSlides: 1,
+			slideMargin: 3,
+			prevSelector: sliderPrev,
+			prevSelector: sliderNext
+
+		});
 	});
+
   </script>
 <header>
 <div class="header-bottom">
@@ -90,7 +109,6 @@
 		<img src="img/slide3.png">
 		<img src="img/slide4.png">
 		<img src="img/slide5.png">
-
 		</div>
 	</div>
 </section>	<!-- end of #main-slide-->
@@ -180,6 +198,7 @@
 
 <div class="product-list">
 	<h2 class="title-goods">알뜰 상품</h2>
+	<!-- <div class="slider" -->
 	<div class="product-list-inner">
 		<div class="box"><div><a href="#"><img src="img/goods04.jpg"></a></div>
 			<div class="txt">
@@ -264,8 +283,8 @@
 					<b>1,550원</b></p>
 			</div>
 		</div>
-		<!-- <div id="content-2" class="box2">
-			<div><div><a href="#"><img src="img/li-2-1.jpg"></a></div>
+		<div id="content-2" class="box2">
+			<div id="content2-1"><div><a href="#"><img src="img/li-2-1.jpg"></a></div>
 				<p class="category-txt"><a href="#">
 					GAP 유레카 블루베리 100g 2종<br></a>
 					<span class="orange">10% </span><b>1,550원</b><del>10,800원</del></p>
@@ -473,7 +492,8 @@
 			<div><div><a href="#"><img src="img/li-17-1.jpg"></div></a></div>
 			<div><div><a href="#"><img src="img/li-17-1.jpg"></div></a></div>
 		</div>
-	</div> end of .category-content-->
+	</div> 
+	<!-- end of .category-content -->
 </div> 
 <div class="full"><a href="#">채소 전체보기</a></div>
 
