@@ -27,10 +27,17 @@
 			maxSlides: 4,
 			moveSlides: 1,
 			slideMargin: 3,
-			prevSelector: sliderPrev,
-			prevSelector: sliderNext
+			// prevSelector: sliderPrev,
+			// prevSelector: sliderNext
 
 		});
+		$(".all_category, .all_category2, .nav_bg").mouseenter(function(){
+			$(".gnb2 ul .sub-menu").stop().slideDown("fast");
+		});
+		$(".gnb2 > ul > li, .nav_bg").mouseleave(function(){
+			$(".gnb2 ul .sub-menu").stop().slideUp("fast");
+		});
+
 	});
 
   </script>
@@ -63,7 +70,7 @@
 	<div id="gnbMenu">
 		<div class="gnb2">
 			<ul>
-				<li><a href="#"><img src="img/category_icon.png">카테고리</a>
+				<li class="all_category"><a href="#"><img class="all_category2" src="img/category_icon.png">카테고리</a>
 					<ul class="sub-menu">
 						<li><a href="#">채소</a></li>
 						<li><a href="#">과일.견과.쌀</a></li>
@@ -84,6 +91,7 @@
 						<li><a href="#">반려동물</a></li>
 						<li><a href="#">컬리의 추천</a></li>
 					</ul>
+					<div class="nav_bg"></div>
 				</li>
 				<li><a href="#">신상품</a></li>
 				<li><a href="#">베스트</a></li>
@@ -149,11 +157,13 @@
 	<div class="main-special-inner">
 		<div class="special">
 			<h1>일일특가</h1><br>
-			<p class="txt-style01">-<br>
-			10월, 한 달간 진행되는 24시간 한정 특가</p><br><br><br>
-		<div class="clock">
+			<p class="txt-style01">
+			<div class="clock_img">
+				clockimg
 			<div class="time">망설이면 늦어요!</div>
-		</div>
+			</div>
+				<br><br>
+			10월, 한 달간 진행되는 24시간 한정 특가</p><br><br>
 		</div>
 		<div class="special-box">
 			<div class="purple-box">
@@ -200,6 +210,9 @@
 	<h2 class="title-goods">알뜰 상품</h2>
 	<!-- <div class="slider" -->
 	<div class="product-list-inner">
+		<div class="dailyprice">
+			일일특가
+		</div>
 		<div class="box"><div><a href="#"><img src="img/goods04.jpg"></a></div>
 			<div class="txt">
 				<p><a href="#">[보나쥬르] 가지 BHA 비건 토너</a></p>
@@ -335,7 +348,7 @@
 		<div id="content-4" class="box2">
 			<div><div><a href="#"><img src="img/li-4-1.jpg"></a></div>
 				<p class="category-txt"><a href="#">
-				[태우한우] 1+ 한우 안심 구이용 200g(냉장)<br></a>
+				[바븐] 완도 전복 260g 내외(5마리)<br></a>
 				<b>3,900원</b>
 				</p>
 			</div>
@@ -347,13 +360,13 @@
 			</div>
 			<div><div><a href="#"><img src="img/li-4-1.jpg"></a></div>
 				<p class="category-txt"><a href="#">
-				[태우한우] 1+ 한우 안심 구이용 200g(냉장)<br></a>
+				[KF365] 양파 1.8kg<br></a>
 				<b>3,900원</b>
 				</p>
 			</div>
 			<div><div><a href="#"><img src="img/li-4-1.jpg"></a></div>
 				<p class="category-txt"><a href="#">
-				[태우한우] 1+ 한우 안심 구이용 200g(냉장)<br></a>
+				[KF365] 가지 2입<br></a>
 				<b>3,900원</b>
 				</p>
 			</div>
@@ -361,25 +374,25 @@
 		<div id="content-5" class="box2">
 			<div><div><a href="#"><img src="img/li-5-1.jpg"></a></div>
 				<p class="category-txt"><a href="#">
-				[하린이네주꾸미] 왕주꾸미 볶음 300g(냉동)<br></a>
+				[KF365] 부추 200g<br></a>
 				<span class="orange">5% </span><b>2,265원</b>
 				<del>8,700원</del></p>
 			</div>
 			<div><div><a href="#"><img src="img/li-5-1.jpg"></a></div>
 				<p class="category-txt"><a href="#">
-				[하린이네주꾸미] 왕주꾸미 볶음 300g(냉동)<br></a>
+				[네떼] 부드러운 샐러드<br></a>
 				<span class="orange">5% </span><b>2,265원</b>
 				<del>8,700원</del></p>
 			</div>
 			<div><div><a href="#"><img src="img/li-5-1.jpg"></a></div>
 				<p class="category-txt"><a href="#">
-				[하린이네주꾸미] 왕주꾸미 볶음 300g(냉동)<br></a>
+				조각 양배추 500g<br></a>
 				<span class="orange">5% </span><b>2,265원</b>
 				<del>8,700원</del></p>
 			</div>
 			<div><div><a href="#"><img src="img/li-5-1.jpg"></a></div>
 				<p class="category-txt"><a href="#">
-				[하린이네주꾸미] 왕주꾸미 볶음 300g(냉동)<br></a>
+				[문경몰] 프리미엄 오미자 자일로스청 원액 1L<br></a>
 				<span class="orange">5% </span><b>2,265원</b>
 				<del>8,700원</del></p>
 			</div>
@@ -577,28 +590,36 @@
 <div class="product-list">
 	<h2 class="title-goods">마감세일</h2>
 	<div class="product-list-inner">
+		<div class="sale_coupon">+20% 쿠폰</div>
 		<div class="box"><div><a href="#"><img src="img/goods01.jpg"></a></div>
-			<div class="txt">
-				<p><a href="#">[Kurly's] R15 통밀 식빵</a></p>
-				<p><span class="orange">35% </span><span class="price">2,275원</span></p>
-				<del>3,500원</del>
-			</div>
+		<div class="txt">
+			<p><a href="#">[Kurly's] R15 통밀 식빵</a></p>
+			<p><span class="orange">35% </span><span class="price">2,275원</span></p>
+			<del>3,500원</del>
 		</div>
-		<div class="box"><div><a href="#"><img src="img/goods02.jpg"></a></div>
-			<div class="txt">
-				<p><a href="#">[은하수산] 노르웨이 생연어회 120g(냉장)</a></p>
-				<p><span class="orange">35% </span><span class="price">6,825원</span></p>
-				<del>10,500원</del>
-			</div>
+	</div>
+	<div class="box"><div><a href="#">
+		<div class="sale_coupon">+20% 쿠폰</div>
+		<img src="img/goods02.jpg"></a></div>
+		<div class="txt">
+			<p><a href="#">[은하수산] 노르웨이 생연어회 120g(냉장)</a></p>
+			<p><span class="orange">35% </span><span class="price">6,825원</span></p>
+			<del>10,500원</del>
 		</div>
-		<div class="box"><div><a href="#"><img src="img/goods03.jpg"></a></div>
+	</div>
+	<div class="box"><div><a href="#">
+			<div class="sale_coupon">다다익선 쿠폰</div>	
+			
+			<img src="img/goods03.jpg"></a></div>
 			<div class="txt">
 				<p><a href="#">[더오담] 맛좋은 찰순대 500g</a></p>
 				<p><span class="orange">35% </span><span class="price">2,275원</span></p>
 				<del>3,500원</del>
 			</div>
 		</div>
-		<div class="box"><div><a href="#"><img src="img/goods04.jpg"></a></div>
+		<div class="box"><div><a href="#">
+			<div class="sale_coupon">일일특가</div>	
+			<img src="img/goods04.jpg"></a></div>
 			<div class="txt">
 				<p><a href="#">베트남 용과 3입팩</a></p>
 				<p><span class="orange">30% </span><span class="price">6,930원</span></p>
