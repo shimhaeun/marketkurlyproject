@@ -758,11 +758,16 @@ ul.tabs li:hover{
 	-background-color:beige;
 }
 .insta-inner{
-	width:1200px;
-	height:250px;
-	margin:auto;
+	width:1050px;
+	height:200px;
+	margin:0 auto;
 	text-align: center;
-	-background-color:pink;
+	display:inline-flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	background:linear-gradient(to bottom, #e5e855 0%, #ef017c 52%, #7c02f7 100%);
+	
 }
 .insta-box{
 	width:175px;
@@ -771,8 +776,8 @@ ul.tabs li:hover{
 	float:left;
 }
 .insta-box img{
-	width:175px;
-	height:175px;
+	width:150px;
+	height:150px;
 }
 .bnr{
 	width:1050px;
