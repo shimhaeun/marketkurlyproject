@@ -331,8 +331,6 @@ header{
 .search input{
 	width:240px;
 	height:36px;
-	/* border:green; */
-	outline:green;
 	border-radius:15px;
 	background-color:#ededed;
 	margin-top:10px;
