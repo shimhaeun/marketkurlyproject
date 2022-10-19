@@ -156,14 +156,14 @@ header{
 	-border:1px solid blue;
 	width:100%;
 	height:55px;
-	z-index:200;
+	z-index: 999;;
 	background-color:#fff;
 }
 .headfix{		/*수정*/
 	top:-100px;
 	left:0;
 	position:fixed;
-	z-index:10000;
+	z-index:999;
 }
 #gnbMenu{
 	width:1200px;
@@ -337,6 +337,7 @@ header{
 	position:absolute;
 	padding:15px;
 	font-size:12px;
+	border:1px solid;
 }
 
 .sch{
@@ -394,6 +395,8 @@ header{
 	-background-color:beige;
 }
 .title-goods{
+	font-size: 25px;
+	font-weight: bold;
 	width:100%;
 	height:140px;
 	line-height:140px;

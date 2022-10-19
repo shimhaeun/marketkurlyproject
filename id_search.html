@@ -7,14 +7,39 @@
     <title>아이디 검색</title>
     <style type="text/css">
         body, input, button{font-size: 20px;}
+        fieldset {
+            display:inline-flex;
+            justify-content: center;
+            align-items: center;
+            align-content:space-between
+        }
+        legend .idsearch {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        
+        input {
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid;
+        }
+        button {
+            width: 70px;
+            height: 50px;
+            background-color: green;
+            color: white;
+            border-radius: 10px;
+            border:0px  solid;
+        }
     </style>
 
 </head>
 <body>
     <form name="id_search_form" action="id_search_result.html" method="get">
         <fieldset>
-            <legend>아이디 검색</legend>
-            <p>
+            <legend id="idsearch">아이디 검색</legend>
+            <p id="contents">
                 <label for="user_id">입력</label>
                 <input type="text" name="user_id" id="user_id" value="admin">
                 <button type="submit">검색</button>

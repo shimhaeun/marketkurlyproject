@@ -4,15 +4,25 @@
 <meta charset="UTF-8">
 <title>마켓컬리 :: 내일의 장보기</title>
 <link rel="stylesheet" href="css/main.css">
+<link href="css/flexnav.css" media="screen, projection" rel="stylesheet" type="text/css">
+<script src="js/jquery.flexnav.min.js" type="text/javascript"></script>
+<script type="text/javascript">$(".flexnav").flexNav();</script>
 </head> 
 <body>
 <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
 <link rel="stylesheet" href="/css/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.0.js" type="text/javascript"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 <script src="/js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="//use.typekit.net/qyb8ood.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 <script>
 	$(document).ready(function(){
-	  $('.slide').bxSlider();
+	  $('.slide').bxSlider({
+		  auto:true,
+		  autoHover:true
+	  });
 	  
 	  //   $('.product-list-inner').bxSlider();
 	  //   $('#content-1').bxSlider();
@@ -31,12 +41,14 @@
 			  // prevSelector: sliderNext
 			  
 			});
-			$(".all_category, .all_category2, .nav_bg").mouseenter(function(){
-				$(".gnb2 ul .sub-menu").stop().slideDown("fast");
-			});
-			$(".gnb2 > ul > li, .nav_bg").mouseleave(function(){
-				$(".gnb2 ul .sub-menu").stop().slideUp("fast");
-			});
+			// category dropdown
+			// $(".all_category, .all_category2, .nav_bg").mouseenter(function(){
+			// 	$(".gnb2 ul .sub-menu").stop().slideDown("fast");
+			// });
+			// $(".gnb2 > ul > li, .nav_bg").mouseleave(function(){
+			// 	$(".gnb2 ul .sub-menu").stop().slideUp("fast");
+			// });
+
 			// var sliderPrev = $(this).find(".insta-box");			
 			// var sliderNext = $(this).find(".insta-box");	
 			
@@ -85,35 +97,157 @@
 <div id="gnbMenu-cover">
 	<div id="gnbMenu">
 		<div class="gnb2">
-			<ul>
+			<div class="menu-button">카테고리</div>
+			<ul data-breakpoint="800" class="flexnav">
 				<li class="all_category"><a href="#"><img class="all_category2" src="img/category_icon.png">카테고리</a>
-					<ul class="sub-menu">
-						<li><a href="#">채소</a></li>
-						<li><a href="#">과일.견과.쌀</a></li>
-						<li><a href="#">수산.해산.건어물</a></li>
-						<li><a href="#">정육.계란</a></li>
-						<li><a href="#">국.반찬.메인요리</a></li>
-						<li><a href="#">샐러드.간편식</a></li>
-						<li><a href="#">면.양념.오일</a></li>
-						<li><a href="#">생수.음료.우유.커피</a></li>
-						<li><a href="#">간식.과자.떡</a></li>
-						<li><a href="#">베이커리.치즈.델리</a></li>
-						<li><a href="#">건강식품</a></li>
-						<li><a href="#">생활용품.리빙</a></li>
-						<li><a href="#">뷰티.바디케어</a></li>
-						<li><a href="#">주방용품</a></li>
-						<li><a href="#">가전제품</a></li>
-						<li><a href="#">베이비.키즈</a></li>
-						<li><a href="#">반려동물</a></li>
-						<li><a href="#">컬리의 추천</a></li>
+					<ul>
+						<li><a href="">선물하기</a>
+						  <ul>
+							<li><a href="#">홍삼·즙</a></li>
+							<li><a href="##">건강식품</a></li>
+							<li><a href="##">과일·수산정육</a></li>
+							<li><a href="##">베이커리·커피·차</a></li>
+							<li><a href="##">간편식·오일·캔류</a></li>
+							<li><a href="##">뷰티·향수·꽃</a></li>
+							<li><a href="##">리빙·생활·유아동</a></li>
+						  </ul>
+					  </li>
+						<li><a href="">채소</a>
+						  <ul>
+							<li><a href="#">친환경</a></li>
+							<li><a href="#">고구마·감자·당근</a></li>
+							<li><a href="#">시금치·쌈채소·나물</a></li>
+							<li><a href="#">브로콜리·파프리카·양배추</a></li>
+							<li><a href="#">양파·대파·마늘·배추</a></li>
+							<li><a href="#">오이·호박·고추</a></li>
+							<li><a href="#">냉동·이색·간편채소</a></li>
+							<li><a href="#">콩나물·버섯</a></li>
+						  </ul>
+						</li>
+						<li><a href="">과일·견과·쌀</a>
+						  <ul>
+							<li><a href="#">친환경</a></li>
+							<li><a href="#">제철과일</a>
+							<li><a href="#">국산과일</a>
+							<li><a href="#">수입과일</a>
+							<li><a href="#">간편과일</a>
+							<li><a href="#">냉동·건과일</a>
+							<li><a href="#">견과류</a>
+							<li><a href="#">쌀·잡곡</a>
+							</li>
+						  </ul>
+						</li>
+						<li><a href="">수산·해산·건어물</a>
+						  <ul>
+							<li><a href="#">제철수산</a></li>
+							<li><a href="##">생선류</a></li>
+							<li><a href="##">굴비·반건류</a></li>
+							<li><a href="##">오징어·낙지·문어</a></li>
+							<li><a href="##">새우·게·랍스터</a></li>
+							<li><a href="##">해산물·조개류</a></li>
+							<li><a href="##">수산가공품</a></li>
+							<li><a href="##">김·미역·해조류</a></li>
+							<li><a href="##">건어물·다시팩</a></li>
+						  </ul>
+						</li>
+						<li><a href="">정육·계란</a>
+						  <ul>
+							<li><a href="#">국내산 소고기</a></li>
+							<li><a href="##">수입산 소고기</a></li>
+							<li><a href="##">돼지고기</a></li>
+							<li><a href="##">계란류</a></li>
+							<li><a href="##">닭·오리고기</a></li>
+							<li><a href="##">양념육·돈까스</a></li>
+							<li><a href="##">양고기</a></li>
+						  </ul>
+					  </li>
+					  <li><a href="">국·반찬·메인요리</a>
+						<ul>
+						  <li><a href="#">국·탕·찌개</a></li>
+						  <li><a href="##">밀키트·메인요리</a></li>
+						  <li><a href="##">밑반찬</a></li>
+						  <li><a href="##">김치·젓갈·장류</a></li>
+						  <li><a href="##">두부·어묵·부침개</a></li>
+						  <li><a href="##">베이컨·햄·통조림</a></li>
+						</ul>
+					</li>
+					<li><a href="">샐러드·간편식</a>
+					  <ul>
+						<li><a href="#">샐러드·닭가슴살</a></li>
+						<li><a href="##">도시락·밥류</a></li>
+						<li><a href="##">파스타·면류</a></li>
+						<li><a href="##">떡볶이·튀김·순대</a></li>
+						<li><a href="##">피자·핫도그·만두</a></li>
+						<li><a href="##">폭립·떡갈비·안주</a></li>
+						<li><a href="##">죽·스프·카레</a></li>
+					  </ul>
+				  </li>
+				  <li><a href="">면·양념·오일</a>
+					<ul>
+					  <li><a href="#">파스타·면</a></li>
+					  <li><a href="##">식초·소스·드레싱</a></li>
+					  <li><a href="##">양념·액젓·장류</a></li>
+					  <li><a href="##">식용유·참기름·오일</a></li>
+					  <li><a href="##">소금·설탕·향신료</a></li>
+					  <li><a href="##">밀가루·가루·믹스</a></li>
 					</ul>
-					<div class="nav_bg"></div>
 				</li>
+				<li><a href="">생수·음료·우유·커피</a>
+				  <ul>
+					<li><a href="#">생수·탄산수</a></li>
+					<li><a href="##">음료·주스</a></li>
+					<li><a href="##">우유·두유·요거트</a></li>
+					<li><a href="##">커피</a></li>
+					<li><a href="##">차</a></li>
+				  </ul>
+			  </li>
+			  <li><a href="">간식·과자·떡</a>
+				<ul>
+				  <li><a href="##">과자·스낵·쿠키 </a></li>
+				  <li><a href="##">초콜릿·젤리·캔디</a></li>
+				  <li><a href="##">떡·한과</a></li>
+				  <li><a href="##">아이스크림</a></li>
+				</ul>
+			</li>
+			<li><a href="">베이커리·치즈·델리</a>
+				<ul>
+				  <li><a href="#">홍삼·즙</a></li>
+				  <li><a href="##">건강즙품</a></li>
+				  <li><a href="##">과일·수산정육</a></li>
+				  <li><a href="##">베이커리·커피·차</a></li>
+				  <li><a href="##">간편식·오일·캔류</a></li>
+				  <li><a href="##">뷰티·향수·꽃</a></li>
+				  <li><a href="##">리빙·생활·유아동</a></li>
+				</ul>
+			</li>
+			<li><a href="">베이커리·치즈·델리</a>
+			  <ul>
+				<li><a href="#">식빵·빵류</a></li>
+				<li><a href="##">잼·버터·스프레드</a></li>
+				<li><a href="##">케이크·파이·디저트</a></li>
+				<li><a href="##">치즈</a></li>
+				<li><a href="##">델리</a></li>
+				<li><a href="##">올리브·피클</a></li>
+			  </ul>
+		  </li>
+		  <li><a href="">건강식품</a>
+			<ul>
+			  <li><a href="#">영양제</a></li>
+			  <li><a href="##">유산균</a></li>
+			  <li><a href="##">홍삼·인삼·꿀</a></li>
+			  <li><a href="##">건강즙·건강음료</a></li>
+			  <li><a href="##">건강분말·건강환·</a></li>
+			  <li><a href="##">다이어트·이너뷰티</a></li>
+			  <li><a href="##">유아동</a></li>
+			</ul>
+			</li>
+			</ul>
+
+					<div class="nav_bg"></div>
 				<li><a href="#">신상품</a></li>
 				<li><a href="#">베스트</a></li>
 				<li><a href="#">알뜰쇼핑</a></li>
 				<li><a href="#">특가/혜택</a></li>
-			</ul>
 		</div>
 		<div class="search">
 			<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="img/search_icon.png" class="sch"></a></input>
@@ -422,21 +556,21 @@
 			</div>
 			<div><div><a href="#"><img src="img/li-6-1.jpg"></a></div>
 				<p class="category-txt"><a href="#">
-				[빅마우스피자] 케이준 감자튀김 피자<br></a>
+				[KF365] 노르웨이 생연어회 200g<br></a>
 				<span class="orange">20% </span><b>4,960원</b>
 				<del>6,200원</del></p>
 			</div>
 			<div><div><a href="#"><img src="img/li-6-1.jpg"></a></div>
 				<p class="category-txt"><a href="#">
-				[빅마우스피자] 케이준 감자튀김 피자<br></a>
+				[닥터유] 제주 용암수 (530mL X 20개)<br></a>
 				<span class="orange">20% </span><b>4,960원</b>
 				<del>6,200원</del></p>
 			</div>
 			<div><div><a href="#"><img src="img/li-6-1.jpg"></a></div>
-				<p class="category-txt"><a href="#">
-				[빅마우스피자] 케이준 감자튀김 피자<br></a>
-				<span class="orange">20% </span><b>4,960원</b>
-				<del>6,200원</del></p>
+				<p class="category-t트t"><a href="#">
+				[마켓컬리 X 울워스] 호주산 부채살스테이크 200g<br></a>
+				<span class="orange">20% </span><b>8,400</b>
+				<del>10,500원</del></p>
 			</div>
 		</div>
 		<div id="content-7" class="box2">
@@ -831,7 +965,6 @@
 </footer>
 
 <div class="top-button"><a href="#top"><img src="img/topbutton.png"></a></div>
-
 </body>
 </html>
 
