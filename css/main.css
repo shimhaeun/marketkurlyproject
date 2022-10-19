@@ -723,7 +723,10 @@ ul.tabs li:hover{
 	display:block;
 	margin-bottom:80px;
 }
-
+/* nav - category */
+.all_category {
+	z-index: 999;
+}
 
 
 /* 컬리의 레시피 */

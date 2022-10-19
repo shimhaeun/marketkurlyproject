@@ -4,75 +4,78 @@
 <meta charset="UTF-8">
 <title>마켓컬리 :: 내일의 장보기</title>
 <link rel="stylesheet" href="css/main.css">
-<link href="css/flexnav.css" media="screen, projection" rel="stylesheet" type="text/css">
-<script src="js/jquery.flexnav.min.js" type="text/javascript"></script>
-<script type="text/javascript">$(".flexnav").flexNav();</script>
+<link href="/css/flexnav.css" media="screen, projection" rel="stylesheet" type="text/css">
+<script src="/js/jquery.flexnav.js" type="text/javascript"></script>
 </head> 
 <body>
-<script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery-3.6.1.min.js"></script>
 <link rel="stylesheet" href="/css/jquery.bxslider.css">
 <script src="http://code.jquery.com/jquery-1.9.0.js" type="text/javascript"></script>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 <script src="/js/jquery.bxslider.js"></script>
 <script type="text/javascript" src="//use.typekit.net/qyb8ood.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-<script>
+<script type="text/javascript">
 	$(document).ready(function(){
-	  $('.slide').bxSlider({
-		  auto:true,
-		  autoHover:true
-	  });
-	  
-	  //   $('.product-list-inner').bxSlider();
-	  //   $('#content-1').bxSlider();
-	  
-	  // $('.product-list-inner').each(function() {
-		  var sliderPrev = $(this).find("#content-1");
-		  var sliderNext = $(this).find("#content-2");
-		  
-		  $(this).find(".category-content").bxSlider({
-			  auto: false,
-			  minSlides: 4,
-			  maxSlides: 4,
-			  moveSlides: 1,
-			  slideMargin: 3,
-			  // prevSelector: sliderPrev,
-			  // prevSelector: sliderNext
-			  
+		$('.slide').bxSlider({
+			auto:true,
+			autoHover:true
+		});
+		
+		//   $('.product-list-inner').bxSlider();
+		//   $('#content-1').bxSlider();
+		
+		// $('.product-list-inner').each(function() {
+			var sliderPrev = $(this).find("#content-1");
+			var sliderNext = $(this).find("#content-2");
+			
+			$(this).find(".category-content").bxSlider({
+				auto: false,
+				minSlides: 4,
+				maxSlides: 4,
+				moveSlides: 1,
+				slideMargin: 3,
+				// prevSelector: sliderPrev,
+				// prevSelector: sliderNext
+				
 			});
 			// category dropdown
 			// $(".all_category, .all_category2, .nav_bg").mouseenter(function(){
-			// 	$(".gnb2 ul .sub-menu").stop().slideDown("fast");
-			// });
-			// $(".gnb2 > ul > li, .nav_bg").mouseleave(function(){
-			// 	$(".gnb2 ul .sub-menu").stop().slideUp("fast");
-			// });
-
-			// var sliderPrev = $(this).find(".insta-box");			
-			// var sliderNext = $(this).find(".insta-box");	
-			
-			
-			$(".insta-inner").bxSlider({
-					auto: true,
-					autoHover:true,
-					slideWidth:800,
-					slideHeight:10,
-					minSlides: 6,
-					maxSlides: 6,
-					moveSlides: 1,
-					slideMargin: 3,
-					pager:false
-				
+				// 	$(".gnb2 ul .sub-menu").stop().slideDown("fast");
+				// });
+				// $(".gnb2 > ul > li, .nav_bg").mouseleave(function(){
+					// 	$(".gnb2 ul .sub-menu").stop().slideUp("fast");
+					// });
+					
+					// var sliderPrev = $(this).find(".insta-box");			
+					// var sliderNext = $(this).find(".insta-box");	
+					
+					
+					$(".insta-inner").bxSlider({
+						auto: true,
+						autoHover:true,
+						slideWidth:800,
+						slideHeight:10,
+						minSlides: 6,
+						maxSlides: 6,
+						moveSlides: 1,
+						slideMargin: 3,
+						pager:false
+					});
 				});
 				
-			});
-			
-			</script>
+				$(".flexnav").flexNav();
+
+				try{Typekit.load();}catch(e){}
+				
+				$(".flexnav").flexNav({'animationSpeed':'fast'});
+		
+				
+				</script>
 <header>
-<div class="header-bottom">
-	<div id="userMenu">
-		<!-- <div class="delivery"><img src="img/delivery_190819.webp"></div> -->
+	<div class="header-bottom">
+		<div id="userMenu">
+			<!-- <div class="delivery"><img src="img/delivery_190819.webp"></div> -->
 		<div class="gnb1">
 			<ul>
 				<li><a href="#" class="purple">회원가입</a></li>
@@ -104,12 +107,12 @@
 						<li><a href="">선물하기</a>
 						  <ul>
 							<li><a href="#">홍삼·즙</a></li>
-							<li><a href="##">건강식품</a></li>
-							<li><a href="##">과일·수산정육</a></li>
-							<li><a href="##">베이커리·커피·차</a></li>
-							<li><a href="##">간편식·오일·캔류</a></li>
-							<li><a href="##">뷰티·향수·꽃</a></li>
-							<li><a href="##">리빙·생활·유아동</a></li>
+							<li><a href="#">건강식품</a></li>
+							<li><a href="#">과일·수산정육</a></li>
+							<li><a href="#">베이커리·커피·차</a></li>
+							<li><a href="#">간편식·오일·캔류</a></li>
+							<li><a href="#">뷰티·향수·꽃</a></li>
+							<li><a href="#">리빙·생활·유아동</a></li>
 						  </ul>
 					  </li>
 						<li><a href="">채소</a>
@@ -140,35 +143,35 @@
 						<li><a href="">수산·해산·건어물</a>
 						  <ul>
 							<li><a href="#">제철수산</a></li>
-							<li><a href="##">생선류</a></li>
-							<li><a href="##">굴비·반건류</a></li>
-							<li><a href="##">오징어·낙지·문어</a></li>
-							<li><a href="##">새우·게·랍스터</a></li>
-							<li><a href="##">해산물·조개류</a></li>
-							<li><a href="##">수산가공품</a></li>
-							<li><a href="##">김·미역·해조류</a></li>
-							<li><a href="##">건어물·다시팩</a></li>
+							<li><a href="#">생선류</a></li>
+							<li><a href="#">굴비·반건류</a></li>
+							<li><a href="#">오징어·낙지·문어</a></li>
+							<li><a href="#">새우·게·랍스터</a></li>
+							<li><a href="#">해산물·조개류</a></li>
+							<li><a href="#">수산가공품</a></li>
+							<li><a href="#">김·미역·해조류</a></li>
+							<li><a href="#">건어물·다시팩</a></li>
 						  </ul>
 						</li>
 						<li><a href="">정육·계란</a>
 						  <ul>
 							<li><a href="#">국내산 소고기</a></li>
-							<li><a href="##">수입산 소고기</a></li>
-							<li><a href="##">돼지고기</a></li>
-							<li><a href="##">계란류</a></li>
-							<li><a href="##">닭·오리고기</a></li>
-							<li><a href="##">양념육·돈까스</a></li>
-							<li><a href="##">양고기</a></li>
+							<li><a href="#">수입산 소고기</a></li>
+							<li><a href="#">돼지고기</a></li>
+							<li><a href="#">계란류</a></li>
+							<li><a href="#">닭·오리고기</a></li>
+							<li><a href="#">양념육·돈까스</a></li>
+							<li><a href="#">양고기</a></li>
 						  </ul>
 					  </li>
 					  <li><a href="">국·반찬·메인요리</a>
 						<ul>
 						  <li><a href="#">국·탕·찌개</a></li>
-						  <li><a href="##">밀키트·메인요리</a></li>
-						  <li><a href="##">밑반찬</a></li>
-						  <li><a href="##">김치·젓갈·장류</a></li>
-						  <li><a href="##">두부·어묵·부침개</a></li>
-						  <li><a href="##">베이컨·햄·통조림</a></li>
+						  <li><a href="#">밀키트·메인요리</a></li>
+						  <li><a href="#">밑반찬</a></li>
+						  <li><a href="#">김치·젓갈·장류</a></li>
+						  <li><a href="#">두부·어묵·부침개</a></li>
+						  <li><a href="#">베이컨·햄·통조림</a></li>
 						</ul>
 					</li>
 					<li><a href="">샐러드·간편식</a>
@@ -195,65 +198,68 @@
 				<li><a href="">생수·음료·우유·커피</a>
 				  <ul>
 					<li><a href="#">생수·탄산수</a></li>
-					<li><a href="##">음료·주스</a></li>
-					<li><a href="##">우유·두유·요거트</a></li>
-					<li><a href="##">커피</a></li>
-					<li><a href="##">차</a></li>
+					<li><a href="#">음료·주스</a></li>
+					<li><a href="#">우유두유·요거트</a></li>
+					<li><a href="#">커피</a></li>
+					<li><a href="#">차</a></li>
 				  </ul>
 			  </li>
 			  <li><a href="">간식·과자·떡</a>
 				<ul>
-				  <li><a href="##">과자·스낵·쿠키 </a></li>
-				  <li><a href="##">초콜릿·젤리·캔디</a></li>
-				  <li><a href="##">떡·한과</a></li>
-				  <li><a href="##">아이스크림</a></li>
+				  <li><a href="#">과자·스낵·쿠키 </a></li>
+				  <li><a href="#">초콜릿·젤리·캔디</a></li>
+				  <li><a href="#">떡·한과</a></li>
+				  <li><a href="#">아이스크림</a></li>
 				</ul>
 			</li>
 			<li><a href="">베이커리·치즈·델리</a>
 				<ul>
 				  <li><a href="#">홍삼·즙</a></li>
-				  <li><a href="##">건강즙품</a></li>
-				  <li><a href="##">과일·수산정육</a></li>
-				  <li><a href="##">베이커리·커피·차</a></li>
-				  <li><a href="##">간편식·오일·캔류</a></li>
-				  <li><a href="##">뷰티·향수·꽃</a></li>
-				  <li><a href="##">리빙·생활·유아동</a></li>
+				  <li><a href="#">건강즙품</a></li>
+				  <li><a href="#">과일·수산정육</a></li>
+				  <li><a href="#">베이커리·커피·차</a></li>
+				  <li><a href="#">간편식·오일·캔류</a></li>
+				  <li><a href="#">뷰티·향수·꽃</a></li>
+				  <li><a href="#">리빙·생활·유아동</a></li>
 				</ul>
 			</li>
 			<li><a href="">베이커리·치즈·델리</a>
 			  <ul>
 				<li><a href="#">식빵·빵류</a></li>
-				<li><a href="##">잼·버터·스프레드</a></li>
-				<li><a href="##">케이크·파이·디저트</a></li>
-				<li><a href="##">치즈</a></li>
-				<li><a href="##">델리</a></li>
-				<li><a href="##">올리브·피클</a></li>
+				<li><a href="#">잼·버터·스프레드</a></li>
+				<li><a href="#">케이크·파이·디저트</a></li>
+				<li><a href="#">치즈</a></li>
+				<li><a href="#">델리</a></li>
+				<li><a href="#">올리브·피클</a></li>
 			  </ul>
 		  </li>
 		  <li><a href="">건강식품</a>
 			<ul>
 			  <li><a href="#">영양제</a></li>
-			  <li><a href="##">유산균</a></li>
-			  <li><a href="##">홍삼·인삼·꿀</a></li>
-			  <li><a href="##">건강즙·건강음료</a></li>
-			  <li><a href="##">건강분말·건강환·</a></li>
-			  <li><a href="##">다이어트·이너뷰티</a></li>
-			  <li><a href="##">유아동</a></li>
+			  <li><a href="#">유산균</a></li>
+			  <li><a href="#">홍삼·인삼·꿀</a></li>
+			  <li><a href="#">건강즙·건강음료</a></li>
+			  <li><a href="#">건강분말·건강환·</a></li>
+			  <li><a href="#">다이어트·이너뷰티</a></li>
+			  <li><a href="#">유아동</a></li>
 			</ul>
 			</li>
 			</ul>
-
-					<div class="nav_bg"></div>
-				<li><a href="#">신상품</a></li>
-				<li><a href="#">베스트</a></li>
-				<li><a href="#">알뜰쇼핑</a></li>
-				<li><a href="#">특가/혜택</a></li>
-		</div>
-		<div class="search">
-			<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="img/search_icon.png" class="sch"></a></input>
-			<img src="img/heart.png" class="deli"><img src="img/cart_icon.png" class="cart">
-		</div>
-	</div>
+			
+			<div class="nav_bg"></div>
+			<li><a href="#">신상품</a></li>
+			<li><a href="#">베스트</a></li>
+			<li><a href="#">알뜰쇼핑</a></li>
+			<li><a href="#">특가/혜택</a></li>
+		</li>
+	</ul>
+</div>
+<div class="search">
+	<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="img/search_icon.png" class="sch"></a></input>
+	<img src="img/heart.png" class="deli"><img src="img/cart_icon.png" class="cart">
+</div>
+</div>
+</div>
 </div>
 </div>	<!-- end of .header-bottom -->
 </header>
