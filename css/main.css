@@ -168,7 +168,7 @@ header{
 #gnbMenu{
 	width:1200px;
 	height:46px;
-	/* background-color:red; */
+	background-color:red;
 	margin:auto;
 }
 .gnb2{
@@ -320,6 +320,7 @@ header{
 
 /* 검색창 */
 .search{
+	display: block;
 	width:325px;
 	height:55px;
 	line-height:55px;
