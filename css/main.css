@@ -387,6 +387,7 @@ header{
 .slides{
 	width:100%;;
 	justify-content: center;
+	z-index: 0;
 }
 
 /* 상품 리스트 */
@@ -422,6 +423,7 @@ header{
 	margin-right:10px;
 	position:relative;
 	overflow:hidden;
+	z-index: -1;
 }
 .box img{
 	width:255px;

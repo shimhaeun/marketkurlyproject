@@ -67,7 +67,7 @@
 	border-right: none;
 	color: gray;
 	text-shadow: 1px 1px 1px #FFF;
-	/* border-bottom:1px solid #FFFFFF; */
+	font-size: 14px;
 }
 #nav ul li:hover{background:#DFEEF0;}
 #nav ul li:last-child { border-bottom: none;}
