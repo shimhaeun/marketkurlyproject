@@ -5,6 +5,6 @@ $(document).ready(function(){
 		$(this).children('ul').slideDown('fast');
 	},
 	function () {
-		$('ul', this).slideUp('fast');            
+		$('ul', this).stop().slideUp('fast');            
 	});
 });

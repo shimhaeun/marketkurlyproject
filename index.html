@@ -16,73 +16,14 @@
 <script src="/js/jquery.bxslider.js"></script>
 <script type="text/javascript" src="/js/jquery.flexnav.min.js"></script>
 <script type="text/javascript" src="//use.typekit.net/qyb8ood.js"></script>
+<script src="/js/timer.js"></script>
+<script src="/js/bxslider.js"></script>
 <!-- jQuery -->
 <!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
-
 <!-- Multi level Menu CSS -->
-<link rel="stylesheet" href="/css/style.css">
-
+<link rel="stylesheet" href="/css/dropdown.css">
 <!-- Multi level Menu Js -->
-<script src="/js/style.js"></script>
-
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('.slide').bxSlider({
-			auto:true,
-			autoHover:true
-		});
-		
-		//   $('.product-list-inner').bxSlider();
-		//   $('#content-1').bxSlider();
-		
-		// $('.product-list-inner').each(function() {
-			var sliderPrev = $(this).find("#content-1");
-			var sliderNext = $(this).find("#content-2");
-			
-			$(this).find(".category-content").bxSlider({
-				auto: false,
-				minSlides: 4,
-				maxSlides: 4,
-				moveSlides: 1,
-				slideMargin: 3,
-				// prevSelector: sliderPrev,
-				// prevSelector: sliderNext
-				
-			});
-			// category dropdown
-			// $(".all_category, .all_category2, .nav_bg").mouseenter(function(){
-				// 	$(".gnb2 ul .sub-menu").stop().slideDown("fast");
-				// });
-				// $(".gnb2 > ul > li, .nav_bg").mouseleave(function(){
-					// 	$(".gnb2 ul .sub-menu").stop().slideUp("fast");
-					// });
-					
-					// var sliderPrev = $(this).find(".insta-box");			
-					// var sliderNext = $(this).find(".insta-box");	
-					
-					
-					$(".insta-inner").bxSlider({
-						auto: true,
-						autoHover:true,
-						slideWidth:800,
-						slideHeight:10,
-						minSlides: 6,
-						maxSlides: 6,
-						moveSlides: 1,
-						slideMㄸargin: 3,
-						pager:false
-					});
-				});
-				
-				$('.flexnav').flexNav();
-
-				try{Typekit.load();}catch(e){}
-				
-				$('.flexnav').flexNav({'animationSpeed':'fast'});
-		
-				
-				</script>
+<script src="/js/dropdown.js"></script>
 <header>
 	<div class="header-bottom">
 		<div id="userMenu">
@@ -99,10 +40,10 @@
 		<div class="logo">
 			<a href="#top"><img src="img/logo.jpg"></a>
 			<div class="logogroup">
-				<div class="mkklogo">
+				<div class="mkklogo" style="cursor:pointer">
 					마켓컬리
 				</div>
-				<div class="btklogo">
+				<div class="btklogo" style="cursor:pointer">
 					뷰티컬리
 				</div>
 			</div>
@@ -111,14 +52,13 @@
 
 <div class="search">
 	<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="img/search_icon.png" class="sch"></a></input>
-	<img src="img/heart.png" class="deli"><img src="img/cart_icon.png" class="cart">
+	<img src="img/heart.png" class="deli" style="cursor:pointer"><img src="img/cart_icon.png" class="cart" style="cursor:pointer">
 </div>
 <!-- <div id="gnbMenu-cover"> -->
 	<!-- <div id="gnbMenu"> -->
 		<!-- <div class="gnb2"> -->
 			<!-- category menu -->
 			<ul id="nav">
-				<!-- <li class="site-name"><a href="#"> </a></li> -->
 					<li class="yahoo"><a href="#">카테고리</a>
 						<ul>
 			<li><a href="#">선물하기</a>            
@@ -244,15 +184,6 @@
 		</li>
 		<li><a href="#">건강식품</a>            
 			<ul>
-<<<<<<< HEAD
-			 <li><a href="#">영양제</a></li>
-			  <li><a href="#">유산균</a></li>
-			  <li><a href="#">홍삼·인삼·꿀</a></li>
-			  <li><a href="#">건강즙·건강음료</a></li>
-			  <li><a href="#">건강분말·건강환·</a></li>
-			  <li><a href="#">다이어트·이너뷰티</a></li>
-			  <li><a href="#">유아동</a></li>
-=======
 				<li><a href="#">영양제</a></li>
 				<li><a href="#">유산균</a></li>
 				<li><a href="#">홍삼·인삼·꿀</a></li>
@@ -362,7 +293,6 @@
 				<li><a href="#">스킨·구강케어</a>
 				<li><a href="#">완구·잡화류</a>
 				</li>
->>>>>>> 675b90bd371778adf989499be12d06161d8a8470
 			</ul>
 		</li>
 		<li><a href="#">컬리의 추천</a>            
@@ -454,6 +384,10 @@
 			<h1>일일특가</h1><br>
 			<p class="txt-style01">
 			<div class="clock_img">
+				<!-- countdown timer -->
+				<div id="the-final-countdown">
+					<p></p>
+				  </div>
 				clockimg
 			<div class="time">망설이면 늦어요!</div>
 			</div>

@@ -40,6 +40,7 @@ ul.bxslider {
   position: absolute;
   bottom: -25px;
   width: 100%;
+  z-index: 0;
 }
 /* LOADER */
 .bx-wrapper .bx-loading {
