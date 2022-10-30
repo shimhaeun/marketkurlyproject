@@ -32,7 +32,7 @@ header{
 	-display:none;
 }
 .header-top-inner{	
-	width:1050px;
+	width:1200px;
 	height:42px;
 	margin:auto;
 	-background-color:black;
@@ -82,7 +82,7 @@ header{
 	height:37px;
 	line-height:37px;
 	text-align:center;
-	background-color:royalblue;
+	-background-color:royalblue;
 	float:right;
 }
 .gnb1 li{
@@ -871,7 +871,7 @@ footer{
 	font-size:13px;
 }
 dl{
-	height:250px;
+	height:150px;
 	-border:3px solid green;
 }
 dt{

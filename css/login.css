@@ -12,6 +12,7 @@ h3 {
 #content{
     border-bottom: 1px solid var(--semi-white);
     min-width: 1050px;
+    height: 650px;
     padding-bottom: 60px;
 }
 
@@ -76,7 +77,8 @@ h3 {
     margin-top: 9px;
   }
   .section_login .label_checkbox.checked:before {
-    background: url(https://res.kurly.com/pc/service/order/1908/ico_checkbox_on.png) no-repeat 50% 50%;
+    background: green;
+    /* background: url(https://res.kurly.com/pc/service/order/1908/ico_checkbox_on.png) no-repeat 50% 50%; */
   }
   
   .section_login .label_checkbox:before {
@@ -125,7 +127,7 @@ h3 {
     display: block;
     overflow: hidden;
     /* width: 100% */
-    width:380px;
+    width:340px;
     height: 54px;
     border-radius: 5px;
     font-size: 0;

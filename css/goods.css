@@ -1,12 +1,12 @@
 /* 상품 상세 페이지 */
 #content {
-    min-width: 1050px;
+    min-width: 1200px;
     padding-bottom: 60px;
     position: relative;
   }
   
   .section_view {
-    width: 1050px;
+    width: 1200px;
     margin: 0 auto;
     padding-top: 20px;
   }
@@ -22,7 +22,7 @@
     display: block;
     padding-top: 7px;
     font-size: var(--font-medium);
-    color: #5f0080;
+    color: green;
     line-height: 20px;
     letter-spacing: 0;
   }
